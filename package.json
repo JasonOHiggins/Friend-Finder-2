@@ -1,0 +1,25 @@
+{
+  "name": "friend-finder-2",
+  "version": "1.0.0",
+  "description": "New Friend Finder project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonOHiggins/Friend-Finder-2.git"
+  },
+  "keywords": [
+    "Friend",
+    "Find",
+    "Finder"
+  ],
+  "author": "Jason O'Higgins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonOHiggins/Friend-Finder-2/issues"
+  },
+  "homepage": "https://github.com/JasonOHiggins/Friend-Finder-2#readme"
+}
