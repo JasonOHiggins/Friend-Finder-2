@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+  <script src="./js/survey.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Answer These Questions</h2>
+    <hr>
+
+    <!-- <button type="submit" id="randomize">
+        Just randomize me and my responses ...</button> -->
+    <h3>
+      <strong>Your Information</strong>
+    </h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to Photo Image (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+    <div id="questionsGoHere"></div>
+
+    <br>
+    <br>
+    <button type="submit" id="submit"> Submit</button>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">Friends List</a> |
+          <a href="https://github.com/JasonOHiggins/Friend-Finder-2">GitHub</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">
+            <strong>Best Match</strong>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
